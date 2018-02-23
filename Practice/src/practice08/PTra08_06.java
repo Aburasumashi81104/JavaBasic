@@ -25,6 +25,8 @@ public class PTra08_06 {
 	 *
 	 * 引数で渡された値の前後に 「 」 を付与して出力するメソッド（"「"と引数と"」"の連結）
 	 */
+
+
 	public static void dispValue(String message) {
 		System.out.println("「" + message + "」");
 	}
