@@ -31,7 +31,7 @@ public class Car {
 	int gasoline;
 
 	public  int run() {
-		this.gasoline--;;
+		this.gasoline--;
 
 		Random rand = new Random();
 		int num = rand.nextInt(15)+1;
