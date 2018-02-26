@@ -1,4 +1,7 @@
 package practice10;
+
+import java.util.Random;
+
 /*
  * PTra10_05.java
  *   作成	LIKEIT	2017
@@ -27,8 +30,18 @@ public class Car {
 	String color;
 	int gasoline;
 
-	public static int runcar(String args[]) {
-		return gasoline;
+	public  int run() {
+		this.gasoline--;;
+
+		Random rand = new Random();
+		int num = rand.nextInt(15)+1;
+
+		if(this.gasoline<0) {
+			return -1;
+		}
+		return num;
+
+
 
 	}
 
