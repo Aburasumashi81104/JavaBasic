@@ -6,6 +6,9 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Hero;
+import practice13.common.Slime;
+
 public class PTra13_04 {
 
 	/*
@@ -15,7 +18,11 @@ public class PTra13_04 {
 	public static void main(String[] args) {
 
 		// ★ HeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者", "スライム"を設定してください
+		Hero hero = new Hero();
+		Slime slime = new Slime();
 
+		hero.setName("勇者");
+		slime.setName("スライム");
 
 		/*
 		 * ★ HeroとSlimeを、どちらかが体力０になるまで戦わせます
@@ -24,6 +31,27 @@ public class PTra13_04 {
 		 * 上記を繰り返し行います
 		 */
 
+		while(true) {
+
+			System.out.println("ヒーローの攻撃！");
+			if(slime.damage(hero.attack())) {
+				System.out.println(	hero.getName()+"は戦闘に勝利した");
+				break;
+			}
+
+			System.out.println(hero.showParameter());
+			System.out.println(slime.showParameter()); //確認用のステ表示
+
+			System.out.println("スライムの攻撃！");
+			if(hero.damage(slime.attack())){
+				System.out.println(	slime.getName()+"は戦闘に勝利した");
+				break;
+			}
+
+			System.out.println(hero.showParameter());
+			System.out.println(slime.showParameter()); //確認用のステ表示
+
+		}
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
 
