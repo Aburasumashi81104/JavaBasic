@@ -39,7 +39,7 @@ public class Student {
 
 
 
-	public String getStudentName(String studentName) {
+	public String getStudentName() {
 		return this.studentName;
 	}
 
@@ -49,7 +49,7 @@ public class Student {
 
 
 
-	public String getCompanyName(String companyName) {
+	public String getCompanyName() {
 		return this.companyName;
 	}
 
@@ -58,7 +58,7 @@ public class Student {
 	}
 
 
-	public String getClassName(String className) {
+	public String getClassName() {
 		return this.className;
 	}
 
@@ -68,7 +68,7 @@ public class Student {
 
 
 
-	public String getMail(String mail) {
+	public String getMail() {
 		return this.className;
 	}
 
@@ -79,7 +79,7 @@ public class Student {
 
 
 
-	public String getPassWord(String password) {
+	public String getPassWord() {
 		return this.password;
 	}
 
