@@ -20,6 +20,11 @@ public class PTra11_02 {
 
 		for(int i = 0; i<bookList.length; i++) {
 
+
+			/*部分一致検索にindexOfを使用
+			 * http://www.itmedia.co.jp/enterprise/articles/0407/12/news003.html*/
+
+
 			if (bookList[i].title.indexOf(line) != -1) {
 				System.out.println(bookList[i].dispBookInfo());
 			}
@@ -27,9 +32,6 @@ public class PTra11_02 {
 
 		}
 
-
-
-
-
 	}
+
 }
