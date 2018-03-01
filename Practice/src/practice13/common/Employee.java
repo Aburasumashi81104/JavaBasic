@@ -19,4 +19,24 @@ public class Employee extends Person {
 	}
 
 
+	public String showParameter() {
+		StringBuilder str = new StringBuilder();
+
+		str.append("名　前：" + this.userNm);
+		str.append("\n");
+		str.append("部　署：" + this.departmentNm);
+		str.append("\n");
+		str.append("人　数：" + this.departmentCnt);
+		str.append("\n");
+		str.append("UserID：" + this.userId);
+		str.append("\n");
+		str.append("PASSWORD：" + this.password);
+		str.append("\n");
+		str.append("Mail：" + this.mail);
+		str.append("\n");
+
+
+		return str.toString();
+	}
+
 }
