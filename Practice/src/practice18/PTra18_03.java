@@ -64,7 +64,7 @@ public class PTra18_03 {
         	if (playerteam.getTeam().equals( "レアル・マドリード") || playerteam.getTeam().equals("バルセロナ")){
         		it.remove();
         	}
-
+        	/*String型は「==」ではなく「.equals()」で正誤判定する*/
         }
 
 //        ListIterator<Player> it = playerList.listIterator(playerList.size());
